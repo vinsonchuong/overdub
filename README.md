@@ -25,3 +25,12 @@ Stack traces for `async` functions, which are
 [not currently supported](https://github.com/nodejs/node/issues/11865) in
 Node.js, are provided via
 [`trace`](https://github.com/AndreasMadsen/trace#readme).
+
+For test runners and other CLI tools that require users to specify a Babel
+config, reuse the `overdub` Babel config like so:
+
+```json
+{
+  "extends": "overdub/babel"
+}
+```
