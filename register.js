@@ -1,6 +1,19 @@
+/* eslint-disable handle-callback-err */
 /* @flow */
-import { register as registerBabel } from 'overdub/lib/babel'
-import { register as registerTrace } from 'overdub/lib/trace'
+import { sep } from 'path'
+import babelConfig from 'overdub/babel'
 
-registerBabel()
-registerTrace()
+require('@babel/register')(babelConfig)
+
+require('trace')
+require('stack-chain').filter.attach((error, frames) => {
+  return frames.filter(callSite => {
+    const name = callSite && callSite.getFileName()
+    return (
+      name &&
+      name.includes(sep) &&
+      !name.startsWith('internal') &&
+      !name.includes(`pirates${sep}lib${sep}index.js`)
+    )
+  })
+})
