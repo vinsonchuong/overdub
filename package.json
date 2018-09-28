@@ -28,7 +28,7 @@
     "flow-bin": "^0.81.0",
     "flow-typed": "^2.5.1",
     "semantic-release": "^15.9.16",
-    "standard-esnext": "^5.1.7"
+    "standard-esnext": "^5.1.8"
   },
   "babel": {
     "presets": [
