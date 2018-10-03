@@ -17,10 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.1.0",
     "@babel/register": "^7.0.0",
-    "babel-preset-diff": "^6.0.3",
-    "clarify": "^2.1.0",
-    "stack-chain": "^2.0.0",
-    "trace": "^3.1.0"
+    "babel-preset-diff": "^6.0.3"
   },
   "devDependencies": {
     "ava": "^1.0.0-beta.8",
