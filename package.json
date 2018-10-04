@@ -15,16 +15,16 @@
     "prepack": "build-esm"
   },
   "dependencies": {
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.1.2",
     "@babel/register": "^7.0.0",
-    "babel-preset-diff": "^6.0.3"
+    "babel-preset-diff": "^6.1.0"
   },
   "devDependencies": {
     "ava": "^1.0.0-beta.8",
-    "build-esm": "^4.1.1",
-    "flow-bin": "^0.81.0",
+    "build-esm": "^4.1.2",
+    "flow-bin": "^0.82.0",
     "flow-typed": "^2.5.1",
-    "semantic-release": "^15.9.16",
+    "semantic-release": "^15.9.17",
     "standard-esnext": "^5.1.8"
   },
   "babel": {
