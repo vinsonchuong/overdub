@@ -1,4 +1,4 @@
 /* @flow */
-import babelConfig from 'overdub/babel'
+import { register } from 'overdub'
 
-require('@babel/register')(babelConfig)
+register()
