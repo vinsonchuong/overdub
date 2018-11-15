@@ -1,6 +1,4 @@
 /* @flow */
-import presetDiff from 'babel-preset-diff'
-
 export default {
-  presets: [presetDiff]
+  presets: [require.resolve('babel-preset-diff')]
 }
