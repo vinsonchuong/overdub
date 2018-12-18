@@ -1,5 +1,5 @@
 # overdub
-[![Build Status](https://travis-ci.org/splayd/overdub.svg?branch=master)](https://travis-ci.org/splayd/overdub)
+[![Build Status](https://travis-ci.org/vinsonchuong/overdub.svg?branch=master)](https://travis-ci.org/vinsonchuong/overdub)
 
 Add full ES.Next support to Node.js
 
