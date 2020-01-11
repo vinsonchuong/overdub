@@ -15,17 +15,17 @@
     "prepack": "build-esm"
   },
   "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/register": "^7.5.5",
-    "babel-preset-diff": "^6.2.0"
+    "@babel/core": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "babel-preset-diff": "^6.2.1"
   },
   "devDependencies": {
-    "ava": "^2.2.0",
-    "build-esm": "^4.2.1",
-    "flow-bin": "^0.104.0",
-    "flow-typed": "^2.6.1",
-    "semantic-release": "^15.13.19",
-    "standard-esnext": "^5.3.3",
+    "ava": "^2.4.0",
+    "build-esm": "^4.2.2",
+    "flow-bin": "^0.115.0",
+    "flow-typed": "^2.6.2",
+    "semantic-release": "^16.0.1",
+    "standard-esnext": "^5.3.5",
     "tempy": "^0.3.0"
   },
   "babel": {
@@ -34,6 +34,11 @@
     ]
   },
   "ava": {
+    "babel": {
+      "testOptions": {
+        "extends": "./dist/babel"
+      }
+    },
     "require": [
       "@babel/register"
     ],

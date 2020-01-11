@@ -10,7 +10,7 @@ test.before(async t => {
 
 test('extending node to support ES.Next', async t => {
   const { stdout } = await shell(
-    'node -r ./dist/register ./test/fixtures/project'
+    'node -r ./dist/register ./test/fixtures/async'
   )
 
   t.log(stdout)
@@ -21,7 +21,10 @@ test('extending node to support ES.Next', async t => {
     .map(line => line.trim())
 
   t.true(lines[0].includes('Error: Hello World!'))
-  t.true(lines.slice(1).every(line => line.includes('test/fixtures/project')))
+  t.true(lines.slice(1).every(line => line.includes('test/fixtures/async')))
+  t.true(lines[1].includes('index.js:8:9'))
+  t.true(lines[2].includes('index.js:13:3'))
+  t.true(lines[3].includes('index.js:18:3'))
 })
 
 test('compiling files outside the current directory', async t => {
